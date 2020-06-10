@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title></title>
+</head>
+<body>
+	<div id="container">
+		<h1>Mortgage Calculator</h1>
+		<div id="calculator">
+			<form>
+				<p>How much is your loan amount?</p>
+				<p>$ <input id="loanAmt" placeholder="Loan Amount" type="text"></p>
+				<p>What is your loan term?</p>
+				<p><select id="loanTerm">
+					<option disabled selected value="0">
+						--Choose Loan Term --
+					</option>
+					<option value="120">
+						10 Year Fixed
+					</option>
+					<option value="180">
+						15 Year Fixed
+					</option>
+					<option value="240">
+						20 Year Fixed
+					</option>
+					<option value="360">
+						30 Year Fixed
+					</option>
+				</select></p>
+			</form>
+            <p>What is your interest rate?</p><p><input id="intRate" placeholder="Interest Rate" type="text"> % <button id="calculate" type="button">Calculate!</button></p>
+            
+		</div><!--calculator end-->
+		<div id="totalMortgage">
+			<sup>$</sup><span id="mortgage">0.00</span> <small id="each"></small>
+		</div><!--totalMortgage end-->
+	</div><!--container end-->
+	<script src="mortgagecalculator.js" type="text/javascript">
+	</script>
+</body>
+</html>
+
+
+
